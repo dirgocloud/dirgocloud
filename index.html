@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirgo Cloud</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Efecto de partículas */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Contenido principal */
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        /* Estilo del subtítulo */
+        p {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+            color: #e6e6e6;
+        }
+
+        /* Efecto de brillo en el título */
+        h1:hover {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6;
+            }
+        }
+
+        /* Efecto de onda en el texto de bienvenida */
+        .wave-text {
+            display: inline-block;
+        }
+
+        .wave-text span {
+            display: inline-block;
+            animation: wave 2s ease-in-out infinite;
+            animation-delay: calc(.1s * var(--i));
+        }
+
+        @keyframes wave {
+            0%, 40%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    
+    <div class="container">
+        <h1>DIRGO CLOUD</h1>
+        
+        <p class="wave-text">
+            <span style="--i:1">B</span>
+            <span style="--i:2">i</span>
+            <span style="--i:3">e</span>
+            <span style="--i:4">n</span>
+            <span style="--i:5">v</span>
+            <span style="--i:6">e</span>
+            <span style="--i:7">n</span>
+            <span style="--i:8">i</span>
+            <span style="--i:9">d</span>
+            <span style="--i:10">o</span>
+            <span> </span>
+            <span style="--i:11">a</span>
+            <span> </span>
+            <span style="--i:12">l</span>
+            <span style="--i:13">a</span>
+            <span> </span>
+            <span style="--i:14">p</span>
+            <span style="--i:15">á</span>
+            <span style="--i:16">g</span>
+            <span style="--i:17">i</span>
+            <span style="--i:18">n</span>
+            <span style="--i:19">a</span>
+            <span> </span>
+            <span style="--i:20">d</span>
+            <span style="--i:21">e</span>
+            <span> </span>
+            <span style="--i:22">d</span>
+            <span style="--i:23">i</span>
+            <span style="--i:24">r</span>
+            <span style="--i:25">g</span>
+            <span style="--i:26">o</span>
+            <span style="--i:27">s</span>
+            <span style="--i:28">o</span>
+            <span>.</span>
+            <span> </span>
+            <span style="--i:29">P</span>
+            <span style="--i:30">a</span>
+            <span style="--i:31">r</span>
+            <span style="--i:32">a</span>
+            <span> </span>
+            <span style="--i:33">l</span>
+            <span style="--i:34">o</span>
+            <span style="--i:35">s</span>
+            <span> </span>
+            <span style="--i:36">q</span>
+            <span style="--i:37">u</span>
+            <span style="--i:38">e</span>
+            <span> </span>
+            <span style="--i:39">n</span>
+            <span style="--i:40">o</span>
+            <span> </span>
+            <span style="--i:41">m</span>
+            <span style="--i:42">e</span>
+            <span> </span>
+            <span style="--i:43">c</span>
+            <span style="--i:44">r</span>
+            <span style="--i:45">e</span>
+            <span style="--i:46">í</span>
+            <span style="--i:47">a</span>
+            <span style="--i:48">n</span>
+            <span> </span>
+            <span style="--i:49">q</span>
+            <span style="--i:50">u</span>
+            <span style="--i:51">e</span>
+            <span> </span>
+            <span style="--i:52">n</span>
+            <span style="--i:53">o</span>
+            <span> </span>
+            <span style="--i:54">t</span>
+            <span style="--i:55">e</span>
+            <span style="--i:56">n</span>
+            <span style="--i:57">í</span>
+            <span style="--i:58">a</span>
+            <span> </span>
+            <span style="--i:59">u</span>
+            <span style="--i:60">n</span>
+            <span> </span>
+            <span style="--i:61">d</span>
+            <span style="--i:62">o</span>
+            <span style="--i:63">m</span>
+            <span style="--i:64">i</span>
+            <span style="--i:65">n</span>
+            <span style="--i:66">i</span>
+            <span style="--i:67">o</span>
+            <span> </span>
+            <span style="--i:68">C</span>
+            <span style="--i:69">h</span>
+            <span style="--i:70">u</span>
+            <span style="--i:71">p</span>
+            <span style="--i:72">e</span>
+            <span style="--i:73">n</span>
+            <span style="--i:74">l</span>
+            <span style="--i:75">a</span>
+        </p>
+    </div>
+
+    <!-- Script para partículas (opcional) -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Inicializar partículas si se desea
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 2,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1,
+                            "direction": "none",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": true,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+</body>
+</html>
